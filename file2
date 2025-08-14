@@ -1,0 +1,10 @@
+# Create 4 text files with sample content
+for i in range(1, 5):
+    file_name = f"file{i}.txt"
+    content = f"This is sample file {i} for GitHub testing.\nCreated for practice with Git commands."
+    
+    with open(file_name, "w") as f:
+        f.write(content)
+    
+    print(f"Created {file_name}")
+

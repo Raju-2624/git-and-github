@@ -1,0 +1,14 @@
+# Create 4 text files with water-related content
+water_texts = [
+    "Water is essential for all living beings. It covers about 71% of the Earth's surface.",
+    "Drinking enough water every day is important for maintaining good health.",
+    "Water can exist in three states: solid (ice), liquid (water), and gas (steam).",
+    "Conserving water helps protect the environment and ensures it is available for future generations."
+]
+
+for i in range(1, 5):
+    file_name = f"water_file{i}.txt"
+    with open(file_name, "w") as f:
+        f.write(water_texts[i-1])
+    print(f"Created {file_name}")
+
